@@ -1,18 +1,32 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
+import { DarkTheme, ThemeProvider, Slot } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useColorScheme } from 'react-native';
+import React from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
+import { VoiceShieldSplashScreen } from '@/components/branding/VoiceShieldSplashScreen';
+import { BrandColors } from '@/constants/theme';
 
 SplashScreen.preventAutoHideAsync();
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+const VoiceShieldTheme = {
+  ...DarkTheme,
+  colors: {
+    ...DarkTheme.colors,
+    background: BrandColors.primaryBackground,
+    card: BrandColors.secondaryBackground,
+    text: BrandColors.primaryText,
+    border: BrandColors.borderMuted,
+    primary: BrandColors.electricBlue,
+  },
+};
+
+export default function RootLayout() {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
-    </ThemeProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <ThemeProvider value={VoiceShieldTheme}>
+        <VoiceShieldSplashScreen displayDuration={3000} fadeDuration={500} />
+        <Slot />
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 }

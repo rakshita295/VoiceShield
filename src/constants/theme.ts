@@ -1,26 +1,57 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://unistyl.es/), etc.
+ * VoiceShield Design System & Brand Identity Tokens
+ * Premium Dark Cyber-Security Theme
  */
 
 import '@/global.css';
 
 import { Platform } from 'react-native';
 
+export const BrandColors = {
+  primaryBackground: '#070817',
+  secondaryBackground: '#0D1230',
+  cardBackground: '#141A36',
+  primaryPurple: '#A020F0',
+  electricBlue: '#168BFF',
+  cyanAccent: '#00D9FF',
+  primaryText: '#FFFFFF',
+  secondaryText: '#A9B0CC',
+  glowPurple: 'rgba(160, 32, 240, 0.45)',
+  glowBlue: 'rgba(22, 139, 255, 0.45)',
+  glowCyan: 'rgba(0, 217, 255, 0.45)',
+  borderMuted: 'rgba(169, 176, 204, 0.15)',
+} as const;
+
+export const BrandGradients = {
+  background: ['#070817', '#0D1230'] as const,
+  backgroundFull: ['#04050E', '#070817', '#0D1230'] as const,
+  shieldBorder: ['#A020F0', '#168BFF'] as const,
+  shieldBorderFull: ['#A020F0', '#168BFF', '#00D9FF'] as const,
+  electricCyan: ['#168BFF', '#00D9FF'] as const,
+  waveform: ['#A020F0', '#168BFF', '#00D9FF'] as const,
+  card: ['#141A36', '#0D1230'] as const,
+} as const;
+
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#070817',
+    background: '#F4F6FC',
+    backgroundElement: '#E7ECF7',
+    backgroundSelected: '#D9E2F4',
+    textSecondary: '#5A627A',
+    primaryPurple: BrandColors.primaryPurple,
+    electricBlue: BrandColors.electricBlue,
+    cyanAccent: BrandColors.cyanAccent,
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: BrandColors.primaryText,
+    background: BrandColors.primaryBackground,
+    backgroundElement: BrandColors.secondaryBackground,
+    backgroundSelected: BrandColors.cardBackground,
+    textSecondary: BrandColors.secondaryText,
+    primaryPurple: BrandColors.primaryPurple,
+    electricBlue: BrandColors.electricBlue,
+    cyanAccent: BrandColors.cyanAccent,
   },
 } as const;
 
@@ -28,13 +59,9 @@ export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
     sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
     serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
     rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
     mono: 'ui-monospace',
   },
   default: {
