@@ -1,0 +1,1134 @@
+{
+  "evaluation_summary": {
+    "total_trials": 71237,
+    "threshold_tau_dev": 11.875,
+    "overall_accuracy_percent": 83.468,
+    "overall_far_percent": 18.337,
+    "overall_frr_percent": 0.857,
+    "eval_eer_percent": 9.341
+  },
+  "per_attack_analysis": {
+    "-": {
+      "attack_id": "-",
+      "total_trials": 7355,
+      "accuracy_percent": 99.143,
+      "error_rate_percent": 0.857,
+      "false_acceptances": 0,
+      "false_rejections": 63,
+      "mean_score": 18.4375,
+      "std_score": 1.8463,
+      "min_score": -5.6914,
+      "max_score": 22.1562,
+      "score_percentiles": {
+        "p5": 15.5938,
+        "p25": 17.7188,
+        "p50_median": 18.75,
+        "p75": 19.5,
+        "p95": 20.5312
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_9035219",
+          -5.69140625
+        ],
+        [
+          "LA_E_2329497",
+          -4.9140625
+        ],
+        [
+          "LA_E_6592171",
+          -2.193359375
+        ],
+        [
+          "LA_E_2782166",
+          -1.96875
+        ],
+        [
+          "LA_E_1450790",
+          -1.646484375
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_1636866",
+          21.9375
+        ],
+        [
+          "LA_E_1291046",
+          21.96875
+        ],
+        [
+          "LA_E_5335220",
+          22.03125
+        ],
+        [
+          "LA_E_1298039",
+          22.078125
+        ],
+        [
+          "LA_E_2600762",
+          22.15625
+        ]
+      ]
+    },
+    "A07": {
+      "attack_id": "A07",
+      "total_trials": 4914,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0,
+      "false_rejections": 0,
+      "mean_score": -5.3727,
+      "std_score": 2.1155,
+      "min_score": -13.2266,
+      "max_score": 5.6484,
+      "score_percentiles": {
+        "p5": -8.8828,
+        "p25": -6.7344,
+        "p50_median": -5.3867,
+        "p75": -3.9424,
+        "p95": -2.0129
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_5740694",
+          -13.2265625
+        ],
+        [
+          "LA_E_9565099",
+          -12.828125
+        ],
+        [
+          "LA_E_4646919",
+          -12.40625
+        ],
+        [
+          "LA_E_3094297",
+          -11.953125
+        ],
+        [
+          "LA_E_3351802",
+          -11.875
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_4387010",
+          2.85546875
+        ],
+        [
+          "LA_E_6616576",
+          3.85546875
+        ],
+        [
+          "LA_E_2731608",
+          5.05859375
+        ],
+        [
+          "LA_E_2229225",
+          5.421875
+        ],
+        [
+          "LA_E_2460501",
+          5.6484375
+        ]
+      ]
+    },
+    "A08": {
+      "attack_id": "A08",
+      "total_trials": 4914,
+      "accuracy_percent": 94.668,
+      "error_rate_percent": 5.332,
+      "false_acceptances": 262,
+      "false_rejections": 0,
+      "mean_score": -3.7929,
+      "std_score": 6.7986,
+      "min_score": -13.2344,
+      "max_score": 16.9062,
+      "score_percentiles": {
+        "p5": -10.1043,
+        "p25": -8.1641,
+        "p50_median": -6.3594,
+        "p75": -3.1377,
+        "p95": 12.0211
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_5018830",
+          -13.234375
+        ],
+        [
+          "LA_E_3159607",
+          -12.6640625
+        ],
+        [
+          "LA_E_4280326",
+          -12.3671875
+        ],
+        [
+          "LA_E_5695910",
+          -12.3515625
+        ],
+        [
+          "LA_E_5128381",
+          -12.328125
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_9547809",
+          15.90625
+        ],
+        [
+          "LA_E_4263028",
+          15.9375
+        ],
+        [
+          "LA_E_9230097",
+          15.9375
+        ],
+        [
+          "LA_E_7839668",
+          16.390625
+        ],
+        [
+          "LA_E_1145857",
+          16.90625
+        ]
+      ]
+    },
+    "A09": {
+      "attack_id": "A09",
+      "total_trials": 4914,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0,
+      "false_rejections": 0,
+      "mean_score": -11.361,
+      "std_score": 2.468,
+      "min_score": -16.5938,
+      "max_score": -0.2025,
+      "score_percentiles": {
+        "p5": -14.573,
+        "p25": -13.1094,
+        "p50_median": -11.8555,
+        "p75": -9.9688,
+        "p95": -6.3098
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_3796626",
+          -16.59375
+        ],
+        [
+          "LA_E_4242520",
+          -16.59375
+        ],
+        [
+          "LA_E_7902014",
+          -16.34375
+        ],
+        [
+          "LA_E_3013763",
+          -16.296875
+        ],
+        [
+          "LA_E_3344928",
+          -16.21875
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_4188009",
+          -2.93359375
+        ],
+        [
+          "LA_E_9319164",
+          -2.6953125
+        ],
+        [
+          "LA_E_5659540",
+          -2.671875
+        ],
+        [
+          "LA_E_6990483",
+          -2.62109375
+        ],
+        [
+          "LA_E_4730130",
+          -0.2025146484375
+        ]
+      ]
+    },
+    "A10": {
+      "attack_id": "A10",
+      "total_trials": 4914,
+      "accuracy_percent": 99.817,
+      "error_rate_percent": 0.183,
+      "false_acceptances": 9,
+      "false_rejections": 0,
+      "mean_score": -4.7016,
+      "std_score": 2.4846,
+      "min_score": -12.0469,
+      "max_score": 16.2188,
+      "score_percentiles": {
+        "p5": -8.2812,
+        "p25": -6.2217,
+        "p50_median": -4.8008,
+        "p75": -3.3574,
+        "p95": -1.1207
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_9690043",
+          -12.046875
+        ],
+        [
+          "LA_E_5462179",
+          -11.75
+        ],
+        [
+          "LA_E_3410299",
+          -11.375
+        ],
+        [
+          "LA_E_4664753",
+          -11.0390625
+        ],
+        [
+          "LA_E_9394786",
+          -10.96875
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_8850392",
+          12.921875
+        ],
+        [
+          "LA_E_8038559",
+          14.65625
+        ],
+        [
+          "LA_E_6237052",
+          14.65625
+        ],
+        [
+          "LA_E_6105199",
+          14.71875
+        ],
+        [
+          "LA_E_4039963",
+          16.21875
+        ]
+      ]
+    },
+    "A11": {
+      "attack_id": "A11",
+      "total_trials": 4914,
+      "accuracy_percent": 99.898,
+      "error_rate_percent": 0.102,
+      "false_acceptances": 5,
+      "false_rejections": 0,
+      "mean_score": -8.6549,
+      "std_score": 3.2961,
+      "min_score": -17.2188,
+      "max_score": 14.3828,
+      "score_percentiles": {
+        "p5": -14.068,
+        "p25": -10.6953,
+        "p50_median": -8.6484,
+        "p75": -6.6729,
+        "p95": -3.5481
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_4749328",
+          -17.21875
+        ],
+        [
+          "LA_E_8871577",
+          -17.0625
+        ],
+        [
+          "LA_E_6634709",
+          -17.0625
+        ],
+        [
+          "LA_E_3286345",
+          -17.015625
+        ],
+        [
+          "LA_E_3846233",
+          -17.0
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_5972743",
+          11.90625
+        ],
+        [
+          "LA_E_5847051",
+          12.625
+        ],
+        [
+          "LA_E_8469034",
+          13.359375
+        ],
+        [
+          "LA_E_3826515",
+          14.03125
+        ],
+        [
+          "LA_E_6798209",
+          14.3828125
+        ]
+      ]
+    },
+    "A12": {
+      "attack_id": "A12",
+      "total_trials": 4914,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0,
+      "false_rejections": 0,
+      "mean_score": -6.1345,
+      "std_score": 2.7229,
+      "min_score": -11.9688,
+      "max_score": 9.2656,
+      "score_percentiles": {
+        "p5": -9.9922,
+        "p25": -8.1719,
+        "p50_median": -6.6855,
+        "p75": -4.1953,
+        "p95": -1.2385
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_1014516",
+          -11.96875
+        ],
+        [
+          "LA_E_3938773",
+          -11.765625
+        ],
+        [
+          "LA_E_6767591",
+          -11.75
+        ],
+        [
+          "LA_E_2655465",
+          -11.703125
+        ],
+        [
+          "LA_E_6764704",
+          -11.671875
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_6229289",
+          2.1328125
+        ],
+        [
+          "LA_E_1981567",
+          2.3984375
+        ],
+        [
+          "LA_E_1354488",
+          2.884765625
+        ],
+        [
+          "LA_E_1297552",
+          7.05078125
+        ],
+        [
+          "LA_E_6543755",
+          9.265625
+        ]
+      ]
+    },
+    "A13": {
+      "attack_id": "A13",
+      "total_trials": 4914,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0,
+      "false_rejections": 0,
+      "mean_score": -5.2685,
+      "std_score": 1.8289,
+      "min_score": -11.7891,
+      "max_score": 1.0254,
+      "score_percentiles": {
+        "p5": -8.2969,
+        "p25": -6.4922,
+        "p50_median": -5.2812,
+        "p75": -3.9414,
+        "p95": -2.3242
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_2821479",
+          -11.7890625
+        ],
+        [
+          "LA_E_2575354",
+          -11.5625
+        ],
+        [
+          "LA_E_4513674",
+          -11.484375
+        ],
+        [
+          "LA_E_1347956",
+          -11.0234375
+        ],
+        [
+          "LA_E_8429609",
+          -10.9296875
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_6995970",
+          -0.2294921875
+        ],
+        [
+          "LA_E_9578141",
+          -0.1878662109375
+        ],
+        [
+          "LA_E_8577720",
+          0.386962890625
+        ],
+        [
+          "LA_E_8503106",
+          0.51513671875
+        ],
+        [
+          "LA_E_8605362",
+          1.025390625
+        ]
+      ]
+    },
+    "A14": {
+      "attack_id": "A14",
+      "total_trials": 4914,
+      "accuracy_percent": 99.959,
+      "error_rate_percent": 0.041,
+      "false_acceptances": 2,
+      "false_rejections": 0,
+      "mean_score": -3.4767,
+      "std_score": 3.0045,
+      "min_score": -12.9297,
+      "max_score": 14.2656,
+      "score_percentiles": {
+        "p5": -8.3387,
+        "p25": -5.3242,
+        "p50_median": -3.3887,
+        "p75": -1.8359,
+        "p95": 1.3083
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_4999345",
+          -12.9296875
+        ],
+        [
+          "LA_E_6622456",
+          -12.5
+        ],
+        [
+          "LA_E_5539767",
+          -11.5625
+        ],
+        [
+          "LA_E_9339810",
+          -11.5625
+        ],
+        [
+          "LA_E_2234785",
+          -11.3125
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_4465414",
+          10.0625
+        ],
+        [
+          "LA_E_2538998",
+          10.109375
+        ],
+        [
+          "LA_E_2492533",
+          10.671875
+        ],
+        [
+          "LA_E_4721989",
+          11.953125
+        ],
+        [
+          "LA_E_2683597",
+          14.265625
+        ]
+      ]
+    },
+    "A15": {
+      "attack_id": "A15",
+      "total_trials": 4914,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0,
+      "false_rejections": 0,
+      "mean_score": -4.7149,
+      "std_score": 2.9146,
+      "min_score": -14.875,
+      "max_score": 11.4062,
+      "score_percentiles": {
+        "p5": -9.6512,
+        "p25": -6.5371,
+        "p50_median": -4.5391,
+        "p75": -2.8345,
+        "p95": -0.2577
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_3756063",
+          -14.875
+        ],
+        [
+          "LA_E_9102868",
+          -14.515625
+        ],
+        [
+          "LA_E_6441769",
+          -14.4296875
+        ],
+        [
+          "LA_E_4907614",
+          -13.953125
+        ],
+        [
+          "LA_E_9710809",
+          -13.53125
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_1899698",
+          7.30078125
+        ],
+        [
+          "LA_E_7889174",
+          7.75
+        ],
+        [
+          "LA_E_7926123",
+          8.078125
+        ],
+        [
+          "LA_E_4031751",
+          10.828125
+        ],
+        [
+          "LA_E_2779764",
+          11.40625
+        ]
+      ]
+    },
+    "A16": {
+      "attack_id": "A16",
+      "total_trials": 4914,
+      "accuracy_percent": 99.919,
+      "error_rate_percent": 0.081,
+      "false_acceptances": 4,
+      "false_rejections": 0,
+      "mean_score": -7.047,
+      "std_score": 3.65,
+      "min_score": -13.7344,
+      "max_score": 13.4219,
+      "score_percentiles": {
+        "p5": -11.7293,
+        "p25": -9.9062,
+        "p50_median": -7.8359,
+        "p75": -4.4619,
+        "p95": -0.9199
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_2145009",
+          -13.734375
+        ],
+        [
+          "LA_E_3258389",
+          -13.6953125
+        ],
+        [
+          "LA_E_1295080",
+          -13.59375
+        ],
+        [
+          "LA_E_6601312",
+          -13.46875
+        ],
+        [
+          "LA_E_2756985",
+          -13.3125
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_1180008",
+          11.3046875
+        ],
+        [
+          "LA_E_4295662",
+          11.953125
+        ],
+        [
+          "LA_E_4466954",
+          12.2109375
+        ],
+        [
+          "LA_E_7665631",
+          12.484375
+        ],
+        [
+          "LA_E_6570911",
+          13.421875
+        ]
+      ]
+    },
+    "A17": {
+      "attack_id": "A17",
+      "total_trials": 4914,
+      "accuracy_percent": 10.806,
+      "error_rate_percent": 89.194,
+      "false_acceptances": 4383,
+      "false_rejections": 0,
+      "mean_score": 15.3314,
+      "std_score": 4.7341,
+      "min_score": -14.1484,
+      "max_score": 21.6875,
+      "score_percentiles": {
+        "p5": 7.1205,
+        "p25": 14.625,
+        "p50_median": 16.5312,
+        "p75": 17.8125,
+        "p95": 19.375
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_7114042",
+          -14.1484375
+        ],
+        [
+          "LA_E_1804935",
+          -12.9609375
+        ],
+        [
+          "LA_E_7539634",
+          -12.8671875
+        ],
+        [
+          "LA_E_9991246",
+          -12.609375
+        ],
+        [
+          "LA_E_7508234",
+          -12.5625
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_8956442",
+          20.921875
+        ],
+        [
+          "LA_E_2843754",
+          20.96875
+        ],
+        [
+          "LA_E_3122594",
+          21.0625
+        ],
+        [
+          "LA_E_7518065",
+          21.375
+        ],
+        [
+          "LA_E_6439158",
+          21.6875
+        ]
+      ]
+    },
+    "A18": {
+      "attack_id": "A18",
+      "total_trials": 4914,
+      "accuracy_percent": 2.808,
+      "error_rate_percent": 97.192,
+      "false_acceptances": 4776,
+      "false_rejections": 0,
+      "mean_score": 16.4664,
+      "std_score": 2.4126,
+      "min_score": -11.0469,
+      "max_score": 21.1094,
+      "score_percentiles": {
+        "p5": 13.1145,
+        "p25": 15.7344,
+        "p50_median": 16.8438,
+        "p75": 17.8281,
+        "p95": 18.9375
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_7458758",
+          -11.046875
+        ],
+        [
+          "LA_E_7614595",
+          -7.90625
+        ],
+        [
+          "LA_E_9952990",
+          -6.39453125
+        ],
+        [
+          "LA_E_4392529",
+          -6.13671875
+        ],
+        [
+          "LA_E_2360583",
+          -5.21875
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_4778839",
+          20.75
+        ],
+        [
+          "LA_E_8446531",
+          20.75
+        ],
+        [
+          "LA_E_2934878",
+          20.78125
+        ],
+        [
+          "LA_E_6330241",
+          20.84375
+        ],
+        [
+          "LA_E_6581694",
+          21.109375
+        ]
+      ]
+    },
+    "A19": {
+      "attack_id": "A19",
+      "total_trials": 4914,
+      "accuracy_percent": 53.744,
+      "error_rate_percent": 46.256,
+      "false_acceptances": 2273,
+      "false_rejections": 0,
+      "mean_score": 5.8313,
+      "std_score": 10.7296,
+      "min_score": -16.1562,
+      "max_score": 19.8438,
+      "score_percentiles": {
+        "p5": -12.2555,
+        "p25": -5.5059,
+        "p50_median": 10.9219,
+        "p75": 15.0078,
+        "p95": 17.2344
+      },
+      "sample_lowest_scores": [
+        [
+          "LA_E_3875932",
+          -16.15625
+        ],
+        [
+          "LA_E_5666662",
+          -15.8984375
+        ],
+        [
+          "LA_E_5133821",
+          -15.71875
+        ],
+        [
+          "LA_E_5486608",
+          -15.671875
+        ],
+        [
+          "LA_E_7072607",
+          -15.5234375
+        ]
+      ],
+      "sample_highest_scores": [
+        [
+          "LA_E_4053711",
+          19.171875
+        ],
+        [
+          "LA_E_3736422",
+          19.28125
+        ],
+        [
+          "LA_E_3384636",
+          19.46875
+        ],
+        [
+          "LA_E_4712816",
+          19.59375
+        ],
+        [
+          "LA_E_1415174",
+          19.84375
+        ]
+      ]
+    }
+  },
+  "acoustic_statistics": {
+    "Bonafide": {
+      "sample_count": 50,
+      "duration_sec": {
+        "mean": 3.128,
+        "std": 0.769
+      },
+      "rms_energy": {
+        "mean": 0.11396,
+        "std": 0.02799
+      },
+      "spectral_centroid_hz": {
+        "mean": 1674.1,
+        "std": 278.7
+      },
+      "spectral_rolloff_hz": {
+        "mean": 3539.9,
+        "std": 850.1
+      },
+      "spectral_flatness": {
+        "mean": 0.025102,
+        "std": 0.01649
+      },
+      "hf_energy_ratio_gt_4khz": {
+        "mean": 0.00962,
+        "std": 0.00982
+      },
+      "lfcc_static_norm": {
+        "mean": 2.616,
+        "std": 0.235
+      },
+      "lfcc_delta_norm": {
+        "mean": 0.2972,
+        "std": 0.0408
+      },
+      "lfcc_deltadelta_norm": {
+        "mean": 0.1244,
+        "std": 0.0186
+      }
+    },
+    "Eval_Generalizing (A07-A16)": {
+      "sample_count": 50,
+      "duration_sec": {
+        "mean": 2.896,
+        "std": 1.302
+      },
+      "rms_energy": {
+        "mean": 0.14564,
+        "std": 0.03225
+      },
+      "spectral_centroid_hz": {
+        "mean": 1682.0,
+        "std": 322.9
+      },
+      "spectral_rolloff_hz": {
+        "mean": 3581.8,
+        "std": 921.9
+      },
+      "spectral_flatness": {
+        "mean": 0.027553,
+        "std": 0.021162
+      },
+      "hf_energy_ratio_gt_4khz": {
+        "mean": 0.01288,
+        "std": 0.01751
+      },
+      "lfcc_static_norm": {
+        "mean": 2.476,
+        "std": 0.3
+      },
+      "lfcc_delta_norm": {
+        "mean": 0.4024,
+        "std": 0.0447
+      },
+      "lfcc_deltadelta_norm": {
+        "mean": 0.1657,
+        "std": 0.0221
+      }
+    },
+    "A17": {
+      "sample_count": 50,
+      "duration_sec": {
+        "mean": 3.203,
+        "std": 0.986
+      },
+      "rms_energy": {
+        "mean": 0.1152,
+        "std": 0.02778
+      },
+      "spectral_centroid_hz": {
+        "mean": 1767.3,
+        "std": 443.1
+      },
+      "spectral_rolloff_hz": {
+        "mean": 3867.2,
+        "std": 1303.7
+      },
+      "spectral_flatness": {
+        "mean": 0.030056,
+        "std": 0.02602
+      },
+      "hf_energy_ratio_gt_4khz": {
+        "mean": 0.01888,
+        "std": 0.02381
+      },
+      "lfcc_static_norm": {
+        "mean": 2.703,
+        "std": 0.214
+      },
+      "lfcc_delta_norm": {
+        "mean": 0.3208,
+        "std": 0.0421
+      },
+      "lfcc_deltadelta_norm": {
+        "mean": 0.1364,
+        "std": 0.0189
+      }
+    },
+    "A18": {
+      "sample_count": 50,
+      "duration_sec": {
+        "mean": 3.415,
+        "std": 0.933
+      },
+      "rms_energy": {
+        "mean": 0.09724,
+        "std": 0.02042
+      },
+      "spectral_centroid_hz": {
+        "mean": 1740.0,
+        "std": 265.7
+      },
+      "spectral_rolloff_hz": {
+        "mean": 3632.0,
+        "std": 841.1
+      },
+      "spectral_flatness": {
+        "mean": 0.031668,
+        "std": 0.016805
+      },
+      "hf_energy_ratio_gt_4khz": {
+        "mean": 0.01094,
+        "std": 0.00969
+      },
+      "lfcc_static_norm": {
+        "mean": 2.431,
+        "std": 0.205
+      },
+      "lfcc_delta_norm": {
+        "mean": 0.3191,
+        "std": 0.0404
+      },
+      "lfcc_deltadelta_norm": {
+        "mean": 0.1359,
+        "std": 0.0169
+      }
+    },
+    "A19": {
+      "sample_count": 50,
+      "duration_sec": {
+        "mean": 3.013,
+        "std": 0.766
+      },
+      "rms_energy": {
+        "mean": 0.10808,
+        "std": 0.01917
+      },
+      "spectral_centroid_hz": {
+        "mean": 1734.8,
+        "std": 356.3
+      },
+      "spectral_rolloff_hz": {
+        "mean": 3790.6,
+        "std": 1026.7
+      },
+      "spectral_flatness": {
+        "mean": 0.028087,
+        "std": 0.017267
+      },
+      "hf_energy_ratio_gt_4khz": {
+        "mean": 0.01674,
+        "std": 0.01523
+      },
+      "lfcc_static_norm": {
+        "mean": 2.44,
+        "std": 0.2
+      },
+      "lfcc_delta_norm": {
+        "mean": 0.2945,
+        "std": 0.0344
+      },
+      "lfcc_deltadelta_norm": {
+        "mean": 0.1263,
+        "std": 0.0148
+      }
+    },
+    "Train_Attacks (A01-A06)": {
+      "sample_count": 50,
+      "duration_sec": {
+        "mean": 2.901,
+        "std": 1.414
+      },
+      "rms_energy": {
+        "mean": 0.13161,
+        "std": 0.01921
+      },
+      "spectral_centroid_hz": {
+        "mean": 1661.1,
+        "std": 142.2
+      },
+      "spectral_rolloff_hz": {
+        "mean": 3147.2,
+        "std": 241.6
+      },
+      "spectral_flatness": {
+        "mean": 0.014572,
+        "std": 0.005583
+      },
+      "hf_energy_ratio_gt_4khz": {
+        "mean": 0.00594,
+        "std": 0.00275
+      },
+      "lfcc_static_norm": {
+        "mean": 2.787,
+        "std": 0.148
+      },
+      "lfcc_delta_norm": {
+        "mean": 0.4271,
+        "std": 0.033
+      },
+      "lfcc_deltadelta_norm": {
+        "mean": 0.1737,
+        "std": 0.0168
+      }
+    }
+  },
+  "generated_figures": [
+    "docs/assets\\score_distribution_by_attack.png",
+    "docs/assets\\lfcc_comparison.png"
+  ]
+}

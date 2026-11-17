@@ -1,0 +1,74 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# External and Large Datasets (External ASVspoof 2019/2021)
+datasets/*
+!datasets/.gitkeep
+!datasets/samples/
+!datasets/samples/**
+
+# Model weights and intermediate checkpoints (Keep checkpoints local)
+models/*
+!models/.gitkeep
+checkpoints/
+*.pt
+*.pth
+*.pwf
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+*.tflite
+
+# Intermediate epoch checkpoints specifically
+experiments/**/checkpoint_epoch_*.pt
+experiments/**/latest_checkpoint.pt
+
+# Allow experiment configurations, metrics, and evaluations to be tracked
+!experiments/.gitkeep
+!experiments/**/
+!experiments/**/*.json
+
+# Logs, runs, and artifacts
+runs/
+logs/
+*.log
+wandb/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables, credentials, and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.secret
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

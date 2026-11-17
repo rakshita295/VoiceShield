@@ -1,0 +1,15 @@
+{
+  "epoch": 1,
+  "train_loss": 0.34072,
+  "train_duration_sec": 344.42,
+  "val_duration_sec": 338.09,
+  "total_epoch_duration_sec": 682.51,
+  "peak_gpu_memory_mb": 385.05,
+  "peak_gpu_memory_gb": 0.376,
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "mixed_precision": true,
+  "val_loss": 0.0888,
+  "val_eer_percent": 4.672,
+  "val_threshold": -5.65625,
+  "val_roc_auc": 0.99111
+}

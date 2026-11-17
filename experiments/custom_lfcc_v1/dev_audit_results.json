@@ -1,0 +1,39 @@
+{
+  "checkpoint": "experiments/custom_lfcc_v1/best_model.pt",
+  "epoch": 10,
+  "total_trials": 24844,
+  "target_count": 2548,
+  "nontarget_count": 22296,
+  "recomputed_eer": 0.007782,
+  "recomputed_eer_percent": 0.778,
+  "recomputed_tau": 11.875,
+  "recomputed_roc_auc": 0.999549,
+  "mean_weighted_loss": 0.14283,
+  "mean_unweighted_loss": 0.24977,
+  "median_weighted_loss": 1e-05,
+  "confusion_matrix": {
+    "TP_bonafide_accepted": 2529,
+    "FN_bonafide_rejected": 19,
+    "TN_spoof_rejected": 22124,
+    "FP_spoof_accepted": 172
+  },
+  "metrics_at_tau": {
+    "accuracy": 0.992312,
+    "precision": 0.93632,
+    "recall": 0.992543,
+    "specificity": 0.992286,
+    "f1_score": 0.963612,
+    "far": 0.007714,
+    "frr": 0.007457
+  },
+  "score_statistics": {
+    "bonafide_mean": 18.1134,
+    "bonafide_std": 1.8868,
+    "bonafide_min": -9.0938,
+    "bonafide_max": 21.7344,
+    "spoof_mean": -10.3545,
+    "spoof_std": 5.0751,
+    "spoof_min": -17.7188,
+    "spoof_max": 16.7812
+  }
+}

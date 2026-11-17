@@ -1,0 +1,211 @@
+{
+  "dataset": "ASVspoof 2019 Logical Access (LA) Evaluation Set",
+  "total_trials": 71237,
+  "target_trials": 7355,
+  "nontarget_trials": 63882,
+  "checkpoint": "experiments/custom_lfcc_v1/best_model.pt",
+  "checkpoint_epoch": 10,
+  "operating_threshold_tau_dev": 11.875,
+  "operating_metrics": {
+    "accuracy": 0.834679,
+    "precision": 0.383668,
+    "recall": 0.991434,
+    "specificity": 0.816631,
+    "f1_score": 0.553242,
+    "false_acceptance_rate": 0.183369,
+    "false_rejection_rate": 0.008566,
+    "confusion_matrix": {
+      "TP_bonafide_accepted": 7292,
+      "FN_bonafide_rejected": 63,
+      "TN_spoof_rejected": 52168,
+      "FP_spoof_accepted": 11714
+    }
+  },
+  "threshold_independent_metrics": {
+    "eval_eer_discrete": 0.093406,
+    "eval_eer_discrete_percent": 9.341,
+    "eval_threshold_discrete": 16.484375,
+    "eval_eer_interpolated": 0.093406,
+    "eval_eer_interpolated_percent": 9.341,
+    "eval_threshold_interpolated": 16.484375,
+    "roc_auc": 0.968302,
+    "min_tdcf": 0.197203
+  },
+  "telemetry": {
+    "total_inference_time_sec": 778.79,
+    "avg_latency_ms": 10.93,
+    "throughput_samples_per_sec": 91.5,
+    "peak_vram_mb": 150.59,
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+  },
+  "attack_breakdown": {
+    "-": {
+      "attack_id": "-",
+      "attack_type": "Human Speech (Bonafide)",
+      "trial_count": 7355,
+      "mean_score": 18.4375,
+      "std_score": 1.8463,
+      "min_score": -5.6914,
+      "max_score": 22.1562,
+      "accuracy_percent": 99.143,
+      "error_rate_percent": 0.857,
+      "false_rejections": 63
+    },
+    "A07": {
+      "attack_id": "A07",
+      "attack_type": "Known Attack Variant",
+      "trial_count": 4914,
+      "mean_score": -5.3727,
+      "std_score": 2.1155,
+      "min_score": -13.2266,
+      "max_score": 5.6484,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0
+    },
+    "A08": {
+      "attack_id": "A08",
+      "attack_type": "Known Attack Variant",
+      "trial_count": 4914,
+      "mean_score": -3.7929,
+      "std_score": 6.7986,
+      "min_score": -13.2344,
+      "max_score": 16.9062,
+      "accuracy_percent": 94.668,
+      "error_rate_percent": 5.332,
+      "false_acceptances": 262
+    },
+    "A09": {
+      "attack_id": "A09",
+      "attack_type": "Known Attack Variant",
+      "trial_count": 4914,
+      "mean_score": -11.361,
+      "std_score": 2.468,
+      "min_score": -16.5938,
+      "max_score": -0.2025,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0
+    },
+    "A10": {
+      "attack_id": "A10",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": -4.7016,
+      "std_score": 2.4846,
+      "min_score": -12.0469,
+      "max_score": 16.2188,
+      "accuracy_percent": 99.817,
+      "error_rate_percent": 0.183,
+      "false_acceptances": 9
+    },
+    "A11": {
+      "attack_id": "A11",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": -8.6549,
+      "std_score": 3.2961,
+      "min_score": -17.2188,
+      "max_score": 14.3828,
+      "accuracy_percent": 99.898,
+      "error_rate_percent": 0.102,
+      "false_acceptances": 5
+    },
+    "A12": {
+      "attack_id": "A12",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": -6.1345,
+      "std_score": 2.7229,
+      "min_score": -11.9688,
+      "max_score": 9.2656,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0
+    },
+    "A13": {
+      "attack_id": "A13",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": -5.2685,
+      "std_score": 1.8289,
+      "min_score": -11.7891,
+      "max_score": 1.0254,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0
+    },
+    "A14": {
+      "attack_id": "A14",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": -3.4767,
+      "std_score": 3.0045,
+      "min_score": -12.9297,
+      "max_score": 14.2656,
+      "accuracy_percent": 99.959,
+      "error_rate_percent": 0.041,
+      "false_acceptances": 2
+    },
+    "A15": {
+      "attack_id": "A15",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": -4.7149,
+      "std_score": 2.9146,
+      "min_score": -14.875,
+      "max_score": 11.4062,
+      "accuracy_percent": 100.0,
+      "error_rate_percent": 0.0,
+      "false_acceptances": 0
+    },
+    "A16": {
+      "attack_id": "A16",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": -7.047,
+      "std_score": 3.65,
+      "min_score": -13.7344,
+      "max_score": 13.4219,
+      "accuracy_percent": 99.919,
+      "error_rate_percent": 0.081,
+      "false_acceptances": 4
+    },
+    "A17": {
+      "attack_id": "A17",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": 15.3314,
+      "std_score": 4.7341,
+      "min_score": -14.1484,
+      "max_score": 21.6875,
+      "accuracy_percent": 10.806,
+      "error_rate_percent": 89.194,
+      "false_acceptances": 4383
+    },
+    "A18": {
+      "attack_id": "A18",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": 16.4664,
+      "std_score": 2.4126,
+      "min_score": -11.0469,
+      "max_score": 21.1094,
+      "accuracy_percent": 2.808,
+      "error_rate_percent": 97.192,
+      "false_acceptances": 4776
+    },
+    "A19": {
+      "attack_id": "A19",
+      "attack_type": "Unseen Attack",
+      "trial_count": 4914,
+      "mean_score": 5.8313,
+      "std_score": 10.7296,
+      "min_score": -16.1562,
+      "max_score": 19.8438,
+      "accuracy_percent": 53.744,
+      "error_rate_percent": 46.256,
+      "false_acceptances": 2273
+    }
+  }
+}
