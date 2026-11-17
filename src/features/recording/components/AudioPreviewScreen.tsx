@@ -29,6 +29,8 @@ import Svg, {
 import { useVoicePlayer } from '@/features/recording/hooks/useVoicePlayer';
 import { AudioRecordingMeta } from '@/features/recording/types/recordingTypes';
 import { BrandColors, Spacing } from '@/constants/theme';
+import { useVoiceShieldDetector } from '@/features/detection/hooks/useVoiceShieldDetector';
+import { AuthenticityResultModal } from '@/features/detection/components/AuthenticityResultModal';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -46,7 +48,13 @@ export const AudioPreviewScreen: React.FC<AudioPreviewScreenProps> = ({
   onDone,
 }) => {
   const insets = useSafeAreaInsets();
-  const [showAiModal, setShowAiModal] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  const { isAnalyzing, result, error, analyze, reset } = useVoiceShieldDetector();
+
+  const handleAnalyzePress = async () => {
+    setModalVisible(true);
+    await analyze(recording.uri);
+  };
 
   // Audio player hook
   const { isPlaying, currentTime, duration, togglePlayPause, seekTo } =
@@ -264,7 +272,7 @@ export const AudioPreviewScreen: React.FC<AudioPreviewScreenProps> = ({
           entering={FadeInDown.delay(280).duration(450)}
           style={[styles.btnWrapper, animatedAnalyzeStyle]}>
           <Pressable
-            onPress={() => setShowAiModal(true)}
+            onPress={handleAnalyzePress}
             onPressIn={() => (analyzeBtnScale.value = withTiming(0.96, { duration: 100 }))}
             onPressOut={() => (analyzeBtnScale.value = withTiming(1, { duration: 150 }))}
             style={styles.analyzeBtn}>
@@ -324,30 +332,17 @@ export const AudioPreviewScreen: React.FC<AudioPreviewScreenProps> = ({
         </Animated.View>
       </ScrollView>
 
-      {/* Phase 5 AI Modal Preview */}
-      {showAiModal && (
-        <View style={styles.modalOverlay}>
-          <View style={styles.modalContent}>
-            <View style={styles.modalIconBox}>
-              <Svg width={32} height={32} viewBox="0 0 24 24" fill="none">
-                <Path
-                  d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                  stroke={BrandColors.cyanAccent}
-                  strokeWidth="2"
-                />
-                <Path d="M9 12L11 14L15 10" stroke={BrandColors.cyanAccent} strokeWidth="2" />
-              </Svg>
-            </View>
-            <Text style={styles.modalTitle}>AI Verification Pipeline</Text>
-            <Text style={styles.modalBody}>
-              The audio recording is safely stored locally. In Phase 5, this audio sample will be fed directly into our on-device ONNX deepfake detection engine to compute synthetic voice probability, spectral anomalies, and acoustic authenticity scores.
-            </Text>
-            <Pressable onPress={() => setShowAiModal(false)} style={styles.modalCloseBtn}>
-              <Text style={styles.modalCloseText}>Got It</Text>
-            </Pressable>
-          </View>
-        </View>
-      )}
+      {/* On-Device VoiceShield Authenticity Verification Modal */}
+      <AuthenticityResultModal
+        visible={modalVisible}
+        isLoading={isAnalyzing}
+        result={result}
+        error={error}
+        onClose={() => {
+          setModalVisible(false);
+          reset();
+        }}
+      />
     </View>
   );
 };

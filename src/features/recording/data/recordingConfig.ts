@@ -21,11 +21,11 @@ import { AudioRecordingConfig } from '@/features/recording/types/recordingTypes'
  * All audio recording in VoiceShield reads dynamically from this configuration.
  */
 export const DEFAULT_AUDIO_CONFIG: AudioRecordingConfig = {
-  sampleRate: 44100,
+  sampleRate: 16000,
   numberOfChannels: 1, // Mono preferred for voice speech analysis
   bitRate: 128000,
   isMeteringEnabled: true,
-  formatDescription: 'AAC Mono • 44.1 kHz • 128 kbps (Local On-Device)',
+  formatDescription: 'Mono • 16.0 kHz (VoiceShield V2 ML Optimized)',
 };
 
 /**
