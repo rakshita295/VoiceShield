@@ -75,11 +75,15 @@ ENV/
 *.pt
 *.pth
 *.onnx
+!modules/voiceshield-detector/android/src/main/assets/models/voiceshield_v2.onnx
 *.tflite
 *.ckpt
 *.h5
 *.bin
 *.pkl
+
+# Mobile Integration Reference Harness (Local Parity Tests)
+mobile_integration/
 
 # Audio & Dataset Archives (Safety Exclusion)
 *.flac

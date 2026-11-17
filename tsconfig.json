@@ -8,6 +8,12 @@
       ],
       "@/assets/*": [
         "./assets/*"
+      ],
+      "voiceshield-detector": [
+        "./modules/voiceshield-detector"
+      ],
+      "voiceshield-detector/*": [
+        "./modules/voiceshield-detector/*"
       ]
     }
   },

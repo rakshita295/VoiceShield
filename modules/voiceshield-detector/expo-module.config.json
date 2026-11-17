@@ -1,0 +1,7 @@
+{
+  "name": "voiceshield-detector",
+  "platforms": ["android"],
+  "android": {
+    "modules": ["com.voiceshield.detector.VoiceShieldDetectorModule"]
+  }
+}
